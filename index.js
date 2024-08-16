@@ -20,7 +20,6 @@ wss.on('connection', (ws) => {
 
     // When a message is received from a client
     ws.on('message', (message) => {
-        // Parse the received message (which is a JSON string)
         const data = JSON.parse(message);
 
         console.log(`Received message from ${data.username}: ${data.message}`);
@@ -35,12 +34,6 @@ wss.on('connection', (ws) => {
             }
         });
     });
-
-    // Send a welcome message to the client that connected
-    ws.send(JSON.stringify({
-        username: 'Server',
-        message: 'Welcome to the chat. Akwaaba. Bienvenue!'
-    }));
 });
 
 // Start the server and listen on the specified port
