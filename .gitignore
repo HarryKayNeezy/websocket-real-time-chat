@@ -1,4 +1,7 @@
-# Logs
+# MacOS files
+.DS_Store
+
+# log
 logs
 *.log
 npm-debug.log*
@@ -6,6 +9,31 @@ yarn-debug.log*
 yarn-error.log*
 lerna-debug.log*
 .pnpm-debug.log*
+
+# build
+node_modules/
+dist/
+build/
+*.env
+.npm/
+.yarn/
+coverage/
+
+# tmp
+*.tmp
+*.swp
+*.swo
+.vscode/
+
+
+# deps
+package-lock.json
+
+# env files
+.env
+.env.local
+.env.development.local
+
 
 # Diagnostic reports (https://nodejs.org/api/report.html)
 report.[0-9]*.[0-9]*.[0-9]*.[0-9]*.json

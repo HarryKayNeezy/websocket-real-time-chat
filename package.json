@@ -1,0 +1,18 @@
+{
+  "name": "ws-chat-app",
+  "version": "1.0.0",
+  "description": "real time ws simple chat app",
+  "main": "index.js",
+  "scripts": {
+    "dev": "nodemon index"
+  },
+  "author": "Harry",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.19.2",
+    "ws": "^8.18.0"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.4"
+  }
+}
