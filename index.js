@@ -4,7 +4,7 @@ const WebSocket = require('ws');
 const path = require('path');
 
 const app = express();
-const PORT = process.env.PORT || 3001;
+const PORT = process.env.PORT || 3000;
 
 // Serve static files from the 'public' directory
 app.use(express.static(path.join(__dirname, 'public')));
@@ -34,6 +34,13 @@ wss.on('connection', (ws) => {
             }
         });
     });
+
+        // Send a welcome message to the client that connected
+        ws.send(JSON.stringify({
+        username: 'Server',
+        message: 'Welcome to the chat. Akwaaba. Bienvenue!'
+    }));
+
 });
 
 // Start the server and listen on the specified port
