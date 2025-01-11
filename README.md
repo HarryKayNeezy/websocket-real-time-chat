@@ -5,4 +5,8 @@ akwaaba, simple websocket real time chat web app.. this is a chat app feature th
 ## install and run
 - clone this repo
 - run `npm run dev` in your terminal
-- open `localhost:3000` in your browser to preview app
+- open `localhost:3000` in your browser to preview app  
+<br>
+
+## preview
+![Preview](public/imgs/akwaaba-ws-rt-chat.png)
