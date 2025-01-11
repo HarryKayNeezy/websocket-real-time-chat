@@ -1,4 +1,6 @@
-const ws = new WebSocket(`ws://${window.location.host}`);
+const protocol = window.location.protocol === 'https:' ? 'wss' : 'ws';
+const ws = new WebSocket(`${protocol}://${window.location.host}`);
+
 const messages = document.getElementById('messages');
 const messageInput = document.getElementById('messageInput');
 const usernameInput = document.getElementById('usernameInput');
